@@ -1,0 +1,38 @@
+.navbar{
+  width: 100%;
+  min-height: 5rem;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+    .home{
+      min-width: 10rem;
+  color:white;
+  margin-right: 16px;
+  font-family: Domine, sans-serif;
+  color: #ebebeb;
+  font-size: 25px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+    
+  }
+}
+
+a{
+  padding-left: 1rem;
+  color: #969696;
+text-decoration: none;
+&:hover{
+    color: #ebebeb; 
+  }
+}
+
