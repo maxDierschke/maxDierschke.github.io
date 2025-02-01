@@ -1,0 +1,11 @@
+<div *ngFor="let post of BLOG_POSTS | keyvalue">
+  <div class="post">
+    
+<a class="headline" [routerLink]="['/post', post.key]" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <h1>{{post.value.title}}</h1>
+</a>
+    <p class="post-info">{{post.value.metadata}}</p>
+    <p>{{post.value.abstract}}</p>
+  <a class="button-round" [routerLink]="['/post', post.key]" routerLinkActive="active" ariaCurrentWhenActive="page">Continue reading →</a>
+  <div>
+</div>

@@ -1,0 +1,7 @@
+{
+  "test_post": {
+    "title": "A Test Post to check if everything is working",
+    "metadata": "February 1st 2025 | 2 min read", 
+    "abstract": "This is a post to test if the website is able to correctly display the blogposts which are written in markdown. The following text will only be a \"Lorem Ipsum\" that tests out different md features."
+  }
+}
