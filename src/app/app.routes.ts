@@ -10,6 +10,7 @@ export const routes: Routes = [
   { path: "about", component: AboutComponent },
   { path: "post/:id", component: PostComponent },
   { path: "page-not-found", component: PageNotFoundComponent },
-  { path: "**", redirectTo: "/page-not-found" },
+  {path: "**", component: PageNotFoundComponent}
+  // { path: "**", redirectTo: "/page-not-found" },
 ];
 
