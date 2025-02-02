@@ -55,28 +55,54 @@ This is a horizontal rule:
 # Features that don't work with the current MD parser
 
 ### This is a heading with custom id {#custom-id}
+Expected:
+<h3 id="custom-id">My Great Heading</h3>
+
 
 Here's a sentence with a footnote. [^1]
 
 [^1]: This is the footnote. 
 
+Expected: 
+The sentence with a footnote<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>
+<ol>
+<li id="fn:1" role="doc-endnote">
+      <p>This is the first footnote.&nbsp;<a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+</li>
+</ol>
 This is a Definition list
-
 term
 : definition
+
+Expected:
+<dl>
+  <dt>term</dt>
+  <dd>definition</dd>
+</dl>
 
 This is a todo list:
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media 
 
-This is an emoji :joy: 
+Expected: </br>
+&#9744; Write the press release </br>
+&#9745; Update the website </br>
+&#9746; contact the media </br>
 
-This is a ==highlight==
+
+This is an emoji :joy: 
+Expected: &#128514; 
+
+This is a ==highlight== 
+Expected <mark>highlight</mark>
 
 This is a subscript H~2~O
+Expected: H<sub>2<sub>O</sub></sub>
+
 
 This is a superscript  	X^2^
+Expected: X<sup>2</sup>
 
 ------
 

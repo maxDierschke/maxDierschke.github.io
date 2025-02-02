@@ -1,7 +1,9 @@
 {
-  "test_post": {
-    "title": "A Test Post to check if everything is working",
-    "metadata": "February 1st 2025 | 2 min read", 
-    "abstract": "This is a post to test if the website is able to correctly display the blogposts which are written in markdown. The following text will only be a \"Lorem Ipsum\" that tests out different md features."
+    "yet_another_tech_blog": {
+    "title": "Yet another tech blog",
+    "metadata": "February 2nd 2025 | 3 min read", 
+    "abstract": "This is the first article for my tech blog. I want to highlight, what made me start it and what to expect from it."
   }
+
+
 }
