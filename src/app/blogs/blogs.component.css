@@ -1,6 +1,7 @@
 div{
   padding-left: 2rem;
   padding-right: 2rem;
+  width:80%;
   max-width: 900px;
   .post {
     border-bottom: 1px solid #d3d3d3;
