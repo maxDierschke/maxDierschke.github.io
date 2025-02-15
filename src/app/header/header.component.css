@@ -1,11 +1,14 @@
 .navbar{
+position:fixed;
+  top: 0;
   width: 100%;
-  min-height: 5rem;
+  min-height: 2rem;
+  height:5rem;
   background-color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  transition: 0.3s;
   nav{
   display: flex;
   align-items: center;
@@ -36,3 +39,32 @@ text-decoration: none;
   }
 }
 
+.mobile{
+  display:none;
+}
+
+#dropdown{
+  display: none;
+  position:fixed;
+  width:100%;
+  top: 5rem;
+  background-color: #333;
+  transition: 0.3s;
+  text-align: center;
+  div {
+    height:1.5rem;
+  }
+}
+ 
+@media only screen and (max-device-width: 480px) {
+  .desktop{
+    display:none;
+  } 
+  .mobile {
+    display: block;
+    overflow: hidden;
+  }
+}
+.placeholder{
+  height: 5rem;
+}

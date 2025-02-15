@@ -1,7 +1,19 @@
-<div class="navbar">
-<nav>
- <a class="home" routerLink="/posts" routerLinkActive="active" ariaCurrentWhenActive="page">Max' Tech Blog</a>
-      <a routerLink="/posts" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
-      <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a>
-</nav>
+<div class="navbar" id="navbar">
+    <nav>
+        <a class="home" routerLink="/posts" routerLinkActive="active" ariaCurrentWhenActive="page">Max' Tech Blog</a>
+      <div class="desktop">
+        <a routerLink="/posts" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+        <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a>
+      </div>
+    <div class="mobile">
+      <a href="javascript:void(0);" (click)="toggleMenu()"><i class="material-icons">menu</i></a>
+    </div>
+   </nav>
+
 </div>
+<div class="mobile" id="dropdown">   
+  <div><a routerLink="/posts" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></div>
+  <div><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></div>
+</div>
+<div class="placeholder"></div>
+ 
