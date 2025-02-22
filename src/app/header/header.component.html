@@ -12,8 +12,8 @@
 
 </div>
 <div class="mobile" id="dropdown">   
-  <div><a routerLink="/posts" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></div>
-  <div><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></div>
+  <div class="option"><a routerLink="/posts"  (click)="toggleMenu()" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></div>
+  <div class="option"><a routerLink="/about"  (click)="toggleMenu()" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></div>
 </div>
 <div class="placeholder"></div>
  

@@ -1,8 +1,12 @@
-
-
 .outlet {
-  margin-top: 5rem;
+  margin-top: 3rem;
+  width: 85%;
+  max-width: 900px;
+  min-width: 250px;
+}
+.content {
   display: flex; 
   justify-content: center;
+  
 }
 

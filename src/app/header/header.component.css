@@ -1,5 +1,5 @@
-.navbar{
-position:fixed;
+.navbar {
+  position:fixed;
   top: 0;
   width: 100%;
   min-height: 2rem;
@@ -9,41 +9,42 @@ position:fixed;
   align-items: center;
   justify-content: center;
   transition: 0.3s;
-  nav{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 100; 
 
-    .home{
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .home {
       min-width: 10rem;
-  color:white;
-  margin-right: 16px;
-  font-family: Domine, sans-serif;
-  color: #ebebeb;
-  font-size: 25px;
-  line-height: 100%;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-decoration: none;
-}
-    
+      color:white;
+      margin-right: 16px;
+      font-family: Domine, sans-serif;
+      color: #ebebeb;
+      font-size: 25px;
+      line-height: 100%;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
   }
 }
 
-a{
+a {
   padding-left: 1rem;
   color: #969696;
-text-decoration: none;
-&:hover{
+  text-decoration: none;
+  &:hover {
     color: #ebebeb; 
   }
 }
 
-.mobile{
+.mobile {
   display:none;
 }
 
-#dropdown{
+#dropdown {
   display: none;
   position:fixed;
   width:100%;
@@ -51,13 +52,17 @@ text-decoration: none;
   background-color: #333;
   transition: 0.3s;
   text-align: center;
-  div {
-    height:1.5rem;
+  z-index: 100;
+  .option {
+    height:3rem;
+    a {
+      font-size: 22px;
+    }
   }
 }
  
 @media only screen and (max-device-width: 480px) {
-  .desktop{
+  .desktop {
     display:none;
   } 
   .mobile {
@@ -65,6 +70,6 @@ text-decoration: none;
     overflow: hidden;
   }
 }
-.placeholder{
+.placeholder {
   height: 5rem;
 }

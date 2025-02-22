@@ -1,12 +1,10 @@
-  .post {
+.post {
   padding-left: 2rem;
   padding-right: 2rem;
-  width:80%;
-  max-width: 900px;
-    border-bottom: 1px solid #d3d3d3;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-  }
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
 
 .headline{
   transition: opacity 200ms ease;

@@ -3,11 +3,16 @@
 
 body {
   margin: 0;
-  h1{
+  h1 {
     margin: 0;
     font-family:  Domine, sans-serif;
   }
- p{
+  h2 {
+    margin: 0;
+    font-family:  Domine, sans-serif;
+  }
+
+ p {
   font-family: 'Open Sans', sans-serif;
   color: #333;
   font-weight: 300;
@@ -23,7 +28,12 @@ body {
       font-size: 14px;
     }
   }
-  img{
+  code {
+    display: inline-block;
+    width: 100%;
+    overflow: scroll;
+  }
+  img {
     display: block;
     margin-left: auto;
     margin-right: auto;
