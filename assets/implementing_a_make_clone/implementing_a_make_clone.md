@@ -13,7 +13,7 @@ So, happily, I can look into algorithms for this topic after all.
 I used [the make manual](https://www.gnu.org/software/make/manual/make.pdf) as a reference for the intenals of *make*.</br>
 This implementation is not meant to extend or even substitute *make*, but is merely an exercise in order to gain a better understanding of the most basic problem that *make* solves.
 
-# What does `make` do?
+# What does *make* do?
 Put into simple terms, *make* is utilized in order to automate the build process.
 
 To run C and C++ programs, we need to create a binary executable from the source code. 
@@ -30,7 +30,7 @@ The compilation time will grow with the project size, and anything would need to
 This is pretty inefficient, as many parts of the compiled software would stay the same.
 To reduce unnecessary recompilation, we can utilize intermediate results and only recompile what changed since the last compilation. </br>
 ![compilation](assets/implementing_a_make_clone/compilation.png)
-The intermediate results we want to use for this are so-called object files (`.o` files).
+The intermediate results we want to use for this are so-called object files (*.o* files).
 These files are created for each source implementation file and need to be linked together to get the same output file that we created in a single step above.
 When using *g++*, we can specify the *-c* flag to produce object files and skip the linking step.
 To trigger the linker separately, we need to execute *g++* again, but with the object files as input.
@@ -57,8 +57,10 @@ The way how the dependency graph is specified in _make_ is with _rules_ in a _ma
 The rules themselves have a *(file)name*, their *dependencies* and the *command* that needs to be executed for that specific rule.
 The rule for main.o would look like the following:
 
-`main.o : main.c defs.h` </br>
-&emsp;&emsp;&emsp;&emsp;&emsp;`cc -c main.c`
+```
+main.o : main.c defs.h
+    cc -c main.c
+```
 
 In this example, the name of the rule is _main.o_, it depends on _main.c_ and _defs.h_ and the command to create _main.o_ is _cc -c main.c_.
 The name that is given to the rule should be the name of the output from the command, as this will be used to evaluate if the file corresponding to the rule is up-to-date or needs to be updated.
@@ -83,8 +85,8 @@ For my implementation, the parsing step is uninteresting so the language is simp
 
 `main.o : main.c defs.h : cc -c main.c`
 
-The name, dependencies and command are seperated by `:` and utilize one line per rule.
-This way, the *myMakeFile* can be read line by line and individual rules only need to be split by `:` to be parsed to a C++ struct.
+The name, dependencies and command are seperated by *:* and utilize one line per rule.
+This way, the *myMakeFile* can be read line by line and individual rules only need to be split by *:* to be parsed to a C++ struct.
 
 From a semantic point of view, each rule already represents a node in a graph.
 The name and the command of the rule would be the node's properties, and the dependencies would be outgoing edges.
@@ -114,11 +116,14 @@ In pseudocode, this may look like the following:
 bool update_if_dependencies_changed(rule, invocation_time = now(), maybe_parent_change_time = null):
     any_dependency_changed = false
     maybe_change_time = file_last_changed_or_null(rule.name)
+
     if(changed_after(maybe_change_time, invocation_time)):
         return true
 
     for(dependency : rule.dependencies):
-        dependency_was_updated = update_if_dependencies_changed(dependency, invocation_time, maybe_change_time)
+        dependency_was_updated = 
+            update_if_dependencies_changed(dependency, invocation_time, maybe_change_time)
+
         if(dependency_was_updated):
             any_dependency_changed = true
     
