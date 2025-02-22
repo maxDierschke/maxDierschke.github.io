@@ -1,9 +1,8 @@
-div{
+  .post {
   padding-left: 2rem;
   padding-right: 2rem;
   width:80%;
   max-width: 900px;
-  .post {
     border-bottom: 1px solid #d3d3d3;
     padding-bottom: 2rem;
     padding-top: 2rem;
@@ -47,6 +46,3 @@ div{
       color: #333;
     }
   }
-
-}
-

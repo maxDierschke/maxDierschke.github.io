@@ -25,7 +25,7 @@ constructor(private route: ActivatedRoute, private httpClient: HttpClient){
         .subscribe((data: any)=> {
           this.data = data[id];
         });
-    const data_path = "assets/" + id; 
+    const data_path = "assets/" + id +"/" + id; 
     this.httpClient.get(data_path + ".html", {responseType: 'text'})
         .subscribe(data => {
         if(!data.startsWith("<!doctype html>")){
