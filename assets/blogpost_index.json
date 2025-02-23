@@ -1,22 +1,15 @@
 {
     "yet_another_tech_blog": {
     "title": "Yet another tech blog",
-    "metadata": "February 2nd 2025 | 3 min read",
-    "order": 1,
+    "metadata": "February 2nd 2025 | 3 min read", 
     "abstract": "This is the first article for my tech blog. I want to highlight, what made me start it and what to expect from it."
   },
   "implementing_a_make_clone": {
     "title": "Implementing a Make clone",
     "metadata": "February 22nd 2025 | 12 min read",
     "picture": "dependency.png",
-    "order": 2,
     "abstract": "Make is used for build automation of C++ software. For this article, I implemented a make clone in order to show its main usage and highlight what a naive make implementation may look like."
-  },
-  "n_queens": {
-    "title": "N Queens",
-    "metadata": "",
-    "abstract": ""
-
   }
+
 
 }
