@@ -1,4 +1,11 @@
 <div class="home">
-  <h1 class="headline">Posts</h1>
-  <app-blogs/>
+  <div class="headline">
+    <h1 class="headline">Posts</h1>
+    <div class="search">
+     <input id="searchInput" [(ngModel)]="searchString"
+     placeholder="search in posts">
+     <i id="searchIcon" class="material-icons">search</i>
+    </div>
+  </div>
+  <app-blogs [searchString]="searchString"/>
 </div>

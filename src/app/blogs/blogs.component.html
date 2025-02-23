@@ -1,11 +1,17 @@
-<div *ngFor="let post of BLOG_POSTS | keyvalue">
-  <div class="post">
+<div *ngFor="let post of filtered_posts">
+  <div class="post"> 
     
-<a class="headline" [routerLink]="['/post', post.key]" routerLinkActive="active" ariaCurrentWhenActive="page">
-    <h2>{{post.value.title}}</h2>
+<a class="headline" [routerLink]="['/post', post.url]" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <h2>{{post.title}}</h2>
 </a>
-    <p class="post-info">{{post.value.metadata}}</p>
-    <p>{{post.value.abstract}}</p>
-  <a class="button-round" [routerLink]="['/post', post.key]" routerLinkActive="active" ariaCurrentWhenActive="page">Continue reading →</a>
+    <p class="post-info">{{post.metadata}}</p>
+  <div *ngIf="post.picture_path">
+   <a class="headline" [routerLink]="['/post', post.url]" routerLinkActive="active" ariaCurrentWhenActive="page">
+
+  <img class="post-picture" [src]="post.picture_path">
+</a>
+  </div>
+    <p>{{post.abstract}}</p>
+  <a class="button-round" [routerLink]="['/post', post.url]" routerLinkActive="active" ariaCurrentWhenActive="page">Continue reading →</a>
   <div>
 </div>

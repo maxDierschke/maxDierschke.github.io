@@ -1,2 +1,25 @@
 .home{
+  .headline {
+    display:flex;
+    h1{
+      font-size: 2em;
+    }
+    .search {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+}
+#searchIcon {
+  background-color: white;
+  margin-left: -2rem;
+  width: 1.8rem;
+  z-index: 99;
+}
+#searchInput {
+  height: 2rem;
+  border-radius: 3px;
+  padding-left: 1rem;
 }
