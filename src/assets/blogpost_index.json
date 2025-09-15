@@ -11,7 +11,20 @@
     "picture": "dependency.png",
     "order": 2,
     "abstract": "Make is used for build automation of C++ software. For this article, I implemented a make clone in order to show its main usage and highlight what a naive make implementation may look like."
+  },
+  "n_queens": {
+    "title": "Long live the queen",
+    "metadata": "Sept 16th 2025 | 7 min read",
+    "picture": "battle.png",
+    "order": 3,
+    "abstract": "Most people have encountered the backtracking algorithm and therefore the N-queens problem. In this post, I will explain the backtracking algorithm to solve the N-queens problem. "
+  },
+  "bit_tricks": {
+    "title": "Manipulating bits for performance' sake",
+    "metadata": "Sept 16th 2025 | 8 min read",
+    "picture": "matrix.jpg",
+    "order": 4,
+    "abstract": "The lowest-level representation of values in a computer (from the software perspective) is bits of 0s and 1s. Most of the time, engineers don't need to interact with this representation directly. As hardware that manipulates bits is very efficient, algorithms can leverage direct bit interaction to improve their runtime. In this post we will talk about bit tricks in general and then show how we may apply them to the N-Queens problem."
   }
-
 
 }
