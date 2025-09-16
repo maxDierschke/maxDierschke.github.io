@@ -24,7 +24,7 @@
     "metadata": "Sept 16th 2025 | 12 min read",
     "picture": "matrix.jpg",
     "order": 4,
-    "abstract": "The lowest level representation of values in a computer (from the software perspective) is bits of 0s and 1s. Most of the time, engineers don't need to interact with this representation directly. As hardware that manipulates bits is very efficient, algorithms can laverage direct bit interaction to improve their runtime. In this post we will talk about bit tricks in general and then show how we may apply it to the N-Queens problem."
+    "abstract": "The lowest-level representation of values in a computer (from the software perspective) is bits of 0s and 1s. Most of the time, engineers don't need to interact with this representation directly. As hardware that manipulates bits is very efficient, algorithms can leverage direct bit interaction to improve their runtime. In this post we will talk about bit tricks in general and then show how we may apply them to the N-Queens problem."
   }
 
 }
